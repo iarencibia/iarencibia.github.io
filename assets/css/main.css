@@ -17,6 +17,7 @@ Color Assignment
 	--bottomcolor: #08141d;
 	--navhlcolor: #546A7B;
 	--piccovercolor: rgba(250, 225, 223, 0.9);
+	--footercolor: #08141d;
   }
 
 html, body, div, span, applet, object,
@@ -3249,7 +3250,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: var(--footercolor);
 		}
 
 		.wrapper.style1 {
