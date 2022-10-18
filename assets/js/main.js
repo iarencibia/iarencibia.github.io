@@ -130,7 +130,7 @@
 		});
 
 	// Spotlights.
-		$('.spotlights > section')
+		$('.spotlights:not(.noflash) > section')
 			.scrollex({
 				mode: 'middle',
 				top: '-10vh',
