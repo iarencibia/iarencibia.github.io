@@ -123,11 +123,11 @@
 									<ul class="contact">
 										<li>
 											<h3>Email</h3>
-											<a href="#">iarencibia@knights.ucf.edu</a>
+											<a id="emaillink"></a>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<span>(305) 799-3996</span>
+											<a id="phonelink"></a>
 										</li>
 										<li>
 											<h3>Social</h3>
@@ -141,7 +141,21 @@
 							</div>
 						</div>
 					</section>
-
+					
+					<!--For preventing webcrawler spam-->
+					<script>
+						const contactReplace  = (text, id, delay = 1000) => {
+							setTimeout(()  => {
+  								let elem = document.getElementById(id);   
+  								let node = document.createTextNode(text);
+  								elem.appendChild(node);
+  								if (text.includes('@'))
+    							elem.href = `mailto:${text}`
+							}, delay)
+						}
+						contactReplace('iarencibia@knights.ucf.edu', 'emaillink')
+						contactReplace('(305)799-3996', 'phonelink')
+					</script>
 			</div>
 
 		<!-- Footer -->
