@@ -31,39 +31,288 @@
 		</nav>
 	</header>
 
+
+
 	<!-- Wrapper -->
 	<div id="wrapper">
+
+		<!-- Modal used to display images large -->
+		<div id="myModal" class="modal">
+
+			<!-- The Close Button -->
+			<span class="close">&times;</span>
+
+			<!-- Modal Content (The Image) -->
+			<img class="modal-content" id="img01">
+
+			<!-- Modal Caption (Image Text) -->
+			<div id="caption"></div>
+		</div>
 
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
 				<h1 class="major">Solidworks Projects</h1>
 				<div style="background-color:#0D1F2D" class="content">
-				<div class="inner">
-					<p> Here is a collection of projects that I feel reflect my ability in Solidworks. Click on any of the images below to download the Solidworks part files. </p>
-				</div>
+					<div class="inner">
+						<p> Here is a collection of projects that I feel reflect my ability in Solidworks. Click on any of the
+							images below to download the Solidworks part files. </p>
+					</div>
 				</div>
 				<section>
 					<div class="box alt">
 						<div class="row gtr-uniform">
-							<div class="col-4"><span class="image fit"><a href="solidworks/RobotArmAssembly.zip"><img src="animations/RobotArmAssembly.gif"
-											alt="Moving robotic arm" /></a></span></div>
-							<div class="col-4"><span class="image fit"><a href="solidworks/TrussDesign.SLDPRT"><img src="images/TrussPic.jpg"
-											alt="Stress testing a truss" /></a></span></div>
-							<div class="col-4"><span class="image fit"><a href="solidworks/Airfoil.zip"><img src="images/AirfoilPic.jpg"
-											alt="Airflow simulation on an airfoil" /></a></span></div>
-							<div class="col-4"><span class="image fit"><a href="solidworks/DispTest.SLDPRT"><img src="images/DisplacementSim.jpg"
-											alt="Displacement simulation on a part" /></a></span></div>
-							<div class="col-4"><span class="image fit"><a href="solidworks/RandAssembly.zip"><img src="images/RandAssemblyPic.jpg"
-											alt="Complex Assembly" /></a></span></div>
-							<div class="col-4"><span class="image fit"><a href="solidworks/PlatePart.SLDPRT"><img src="images/PlatePic.jpg"
-											alt="Plate part made with circular patterning" /></a></span></div>			
+							<div class="col-4"><span class="image fit"><a href="solidworks/RobotArmAssembly.zip"><img
+											src="animations/RobotArmAssembly.gif" alt="Moving robotic arm" /></a></span></div>
+							<div class="col-4"><span class="image fit"><a href="solidworks/TrussDesign.SLDPRT"><img
+											src="images/TrussPic.jpg" alt="Stress testing a truss" /></a></span></div>
+							<div class="col-4"><span class="image fit"><a href="solidworks/Airfoil.zip"><img
+											src="images/AirfoilPic.jpg" alt="Airflow simulation on an airfoil" /></a></span></div>
+							<div class="col-4"><span class="image fit"><a href="solidworks/DispTest.SLDPRT"><img
+											src="images/DisplacementSim.jpg" alt="Displacement simulation on a part" /></a></span></div>
+							<div class="col-4"><span class="image fit"><a href="solidworks/RandAssembly.zip"><img
+											src="images/RandAssemblyPic.jpg" alt="Complex Assembly" /></a></span></div>
+							<div class="col-4"><span class="image fit"><a href="solidworks/PlatePart.SLDPRT"><img
+											src="images/PlatePic.jpg" style="width:100%; height:auto"
+											alt="Plate part made with circular patterning" /></a></span></div>
+
+							<!--
+							README: These are commented out image templates that you can use to add buttons to the images above
+							The only things you need to change in the template are:
+							1. The img src property, to the image that you want displayed.
+							2. The href property of the a tag, telling it which file to download.
+							3. The alt text, to match the alt text of the image being displayed. This alt text is also used a caption
+							when expanding the image.
+							
+							The rest of it should just work automatically cause of some cool javascript and css stuff :)
+
+							==================== TEMPLATE 1: Image with just one button, for downloading ===========================================
+							<div class="col-4"><span class="image fit buttoncontainer"><img src="images/PlatePic.jpg"
+										alt="Plate part made with circular patterning" />
+									<div class="overlay"></div>
+									<a href="solidworks/PlatePart.SLDPRT" class="button icon solid fa-download btn btn0">Download Part</a>
+								</span>
+							</div>
+							========================================================================================================================
+
+							==================== TEMPLATE 2: Image with just two buttons, one for downloading, another for expanding ===============
+							<div class="col-4"><span class="image fit buttoncontainer"><img src="images/PlatePic.jpg"
+										alt="Plate part made with circular patterning" />
+									<div class="overlay"></div>
+									<a href="solidworks/PlatePart.SLDPRT" class="button icon solid fa-download btn btn1">Download Part</a>
+									<a onclick="expandImg(this)" class="button icon solid fa-search btn btn2">&nbsp;Expand Image&nbsp;
+									</a>
+								</span>
+							</div>
+							=========================================================================================================================
+							-->
+
 						</div>
 					</div>
 				</section>
 			</div>
 	</div>
 	</section>
+
+	<!-- Styles used for the buttons that show up when hovering an image -->
+	<style>
+		@media only screen and (min-width: 700px) {
+
+			/* Container needed to position the button. Adjust the width as needed */
+			.buttoncontainer {
+				position: relative;
+				width: 50%;
+			}
+
+			/* Make the image responsive */
+			.buttoncontainer img {
+				width: 100%;
+				height: auto;
+			}
+
+			/* Style the button and place it in the middle of the container/image */
+			.buttoncontainer .btn0 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+			}
+
+			.buttoncontainer .btn1 {
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+			}
+
+			.buttoncontainer .btn2 {
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+			}
+
+			.buttoncontainer:hover .overlay {
+				display: block;
+				background: rgba(0, 0, 0, .75);
+			}
+
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0);
+				transition: background 0.5s ease;
+			}
+
+			.buttoncontainer .btn {
+				opacity: 0;
+			}
+
+			.buttoncontainer:hover .btn {
+				opacity: 1;
+			}
+
+			.btn {
+				opacity: 0
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.btn {
+				display: none
+			}
+		}
+	</style>
+
+	<style>
+		/* The Modal (background) */
+		.modal {
+			display: none;
+			/* Hidden by default */
+			position: fixed;
+			/* Stay in place */
+			z-index: 1;
+			/* Sit on top */
+			padding-top: 100px;
+			/* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%;
+			/* Full width */
+			height: 100%;
+			/* Full height */
+			overflow: auto;
+			/* Enable scroll if needed */
+			background-color: rgb(0, 0, 0);
+			/* Fallback color */
+			background-color: rgba(0, 0, 0, 0.9);
+			/* Black w/ opacity */
+		}
+
+		/* Modal Content (Image) */
+		.modal-content {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+		}
+
+		/* Caption of Modal Image (Image Text) - Same Width as the Image */
+		#caption {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			color: #ccc;
+			padding: 10px 0;
+			height: 150px;
+		}
+
+		/* Add Animation - Zoom in the Modal */
+		.modal-content,
+		#caption {
+			animation-name: zoom;
+			animation-duration: 0.6s;
+		}
+
+		@keyframes zoom {
+			from {
+				transform: scale(0)
+			}
+
+			to {
+				transform: scale(1)
+			}
+		}
+
+		/* The Close Button */
+		.close {
+			position: absolute;
+			top: 15px;
+			right: 35px;
+			color: #f1f1f1;
+			font-size: 40px;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #bbb;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		/* 100% Image Width on Smaller Screens */
+		@media only screen and (max-width: 700px) {
+			.modal-content {
+				width: 100%;
+			}
+		}
+	</style>
+
+	<script>
+		// Get the modal
+
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		// var button = document.getElementById("expandbutton");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		// button.onclick = function () {
+		// 	modal.style.display = "block";
+		// 	modalImg.src = this.src;
+		// 	captionText.innerHTML = this.alt;
+		// }
+
+		const expandImg = (elem) => {
+			console.log("hi")
+			let imgContainer = elem.parentElement.children
+			console.log(imgContainer)
+
+			let img = imgContainer[0]
+			console.log(img)
+			modal.style.display = "block";
+			modalImg.src = img.src;
+			captionText.innerHTML = img.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+	</script>
 
 	</div>
 
