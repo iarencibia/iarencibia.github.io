@@ -5,162 +5,173 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Isabella Arencibia | Home</title>
-        <link rel="shortcut icon" type="image/png" href="images/initialsfaviconfin.png"/>
-        <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-	<body class="is-preload">
 
-		<!-- Navbar -->
-        <section id="sidebar">
-            <div class="inner">
-				<nav>
-					<ul>
-						<li><a href="#intro">Home</a></li>
-						<li><a href="#one">Projects</a></li>
-						<li><a href="#two">Skills</a></li>
-						<li><a href="#three">Contact Information</a></li>
-					</ul>
-				</nav>
-            </div>
-        </section>
-       
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Isabella Arencibia | Home</title>
+	<link rel="shortcut icon" type="image/png" href="images/initialsfaviconfin.png" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Isabella Arencibia</h1>
-							<p>Welcome to my personal portfolio! Here you will find all the projects I have completed and those that I am still working on.</p>
-							<ul class="actions">
-								<li><a href="Isabella Arencibia - Resume.pdf" class="button icon solid fa-download">Resume</a></li></a>
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+<body class="is-preload">
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a class="image"><img src="images/examplepart.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Solidworks Projects</h2>
-									<p>A collection of the projects I have completed for my CAD classes. These were a great learning opportunity that exposed me to a variety of techniques and design principles.</p>
-									<ul class="actions">
-										<li><a href="SWProjs.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a class="image"><img src="images/pcpic.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Personal Projects</h2>
-									<p>These are projects I worked on in my free time. In these, I am able to apply the things I learned to create fun builds that I am able to use in my day-to-day life.</p>
-									<ul class="actions">
-										<li><a href="OtherProjs.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+	<!-- Navbar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Home</a></li>
+					<li><a href="#one">Projects</a></li>
+					<li><a href="#two">Skills</a></li>
+					<li><a href="#three">Contact Information</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>My Skills</h2>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Computer Software</h3>
-									<p>Solidworks CSWA Certified <br> Microsoft Office <br> Visual Studio Code </p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Web Development</h3>
-									<p>HTML <br> CSS </p>
-								</section>
-								<section>
-									<span class="icon solid major fa-globe-americas"></span>
-									<h3>Language</h3>
-									<p>Fluent in Spanish at a native speaker level</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-phone"></span>
-									<h3>Customer Service</h3>
-									<p>Excellent Communication <br> Analytical Skills <br> Client Relationship Building</p>
-								</section>
-							</div>
-						</div>
-					</section>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contact Information</h2>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a id="emaillink"></a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<a id="phonelink"></a>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://www.linkedin.com/in/iarencibia/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://github.com/iarencibia" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-						</div>
-					</section>
-					
-					<!--For preventing webcrawler spam-->
-					<script>
-						const contactReplace  = (text, id, delay = 1000) => {
-							setTimeout(()  => {
-  								let elem = document.getElementById(id);   
-  								let node = document.createTextNode(text);
-  								elem.appendChild(node);
-  								if (text.includes('@'))
-    							elem.href = `mailto:${text}`
-							}, delay)
-						}
-						contactReplace('iarencibia@jatca.net', 'emaillink')
-						contactReplace('(305)799-3996', 'phonelink')
-					</script>
-			</div>
-
-		<!-- Footer -->
-		<footer style="clear:right" id="footer" class="wrapper alt">
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Isabella Arencibia. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				<h1>Isabella Arencibia</h1>
+				<p>Welcome to my personal portfolio! Here you will find all the projects I have completed and those that I am
+					still working on.</p>
+				<ul class="actions">
+					<li><a href="Resume.pdf" class="button icon solid fa-download">Resume</a></li></a>
+					<li><a href="#one" class="button scrolly">Learn more</a></li>
 				</ul>
 			</div>
-		</footer>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a class="image"><img src="images/examplepart.png" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Solidworks Projects</h2>
+						<p>A collection of the projects I have completed for my CAD classes. These were a great learning opportunity
+							that exposed me to a variety of techniques and design principles.</p>
+						<ul class="actions">
+							<li><a href="SWProjs.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a class="image"><img src="images/pcpic.jpg" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Personal Projects</h2>
+						<p>These are projects I worked on in my free time. In these, I am able to apply the things I learned to
+							create fun builds that I am able to use in my day-to-day life.</p>
+						<ul class="actions">
+							<li><a href="OtherProjs.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>My Skills</h2>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-desktop"></span>
+						<h3>Computer Software</h3>
+						<p>Solidworks CSWA Certified <br> Microsoft Office <br> Visual Studio Code </p>
+					</section>
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>Web Development</h3>
+						<p>HTML <br> CSS </p>
+					</section>
+					<section>
+						<span class="icon solid major fa-globe-americas"></span>
+						<h3>Language</h3>
+						<p>Fluent in Spanish at a native speaker level</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-phone"></span>
+						<h3>Customer Service</h3>
+						<p>Excellent Communication <br> Analytical Skills <br> Client Relationship Building</p>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Contact Information</h2>
+				<section>
+					<ul class="contact">
+						<li>
+							<h3>Email</h3>
+							<a id="emaillink"></a>
+						</li>
+						<li>
+							<h3>Phone</h3>
+							<a id="phonelink"></a>
+						</li>
+						<li>
+							<h3>Social</h3>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/iarencibia/" class="icon brands fa-linkedin-in"><span
+											class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/iarencibia" class="icon brands fa-github"><span
+											class="label">GitHub</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</section>
+
+		<!--For preventing webcrawler spam-->
+		<script>
+			const contactReplace = (text, id, delay = 1000) => {
+				setTimeout(() => {
+					let elem = document.getElementById(id);
+					let node = document.createTextNode(text);
+					elem.appendChild(node);
+					if (text.includes('@'))
+						elem.href = `mailto:${text}`
+				}, delay)
+			}
+			contactReplace('iarencibia@jatca.net', 'emaillink')
+			contactReplace('(305)799-3996', 'phonelink')
+		</script>
+	</div>
+
+	<!-- Footer -->
+	<footer style="clear:right" id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Isabella Arencibia. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
 
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
